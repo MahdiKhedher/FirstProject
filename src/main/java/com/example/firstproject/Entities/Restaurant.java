@@ -19,35 +19,4 @@ public class Restaurant implements Serializable {
     @OneToMany
     private List<Menu> menus;
 
-    public Restaurant() {
-    }
-
-    public Restaurant(String nom, Long nbPlacesMax) {
-        this.nom = nom;
-        this.nbPlacesMax = nbPlacesMax;
-    }
-
-    public Long getIdRestaurant() {
-        return idRestaurant;
-    }
-
-    public void setIdRestaurant(Long idRestaurant) {
-        this.idRestaurant = idRestaurant;
-    }
-
-    public String getNom() {
-        return nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public Long getNbPlacesMax() {
-        return nbPlacesMax;
-    }
-
-    public void setNbPlacesMax(Long nbPlacesMax) {
-        this.nbPlacesMax = nbPlacesMax;
-    }
 }

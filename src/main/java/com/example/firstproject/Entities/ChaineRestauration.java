@@ -17,36 +17,5 @@ public class ChaineRestauration implements Serializable {
     @OneToMany(mappedBy = "chaineRestauration")
     private List<Restaurant> Restaurants;
 
-    public ChaineRestauration() {
-    }
 
-    public ChaineRestauration(String libelle, LocalDate dateCreation) {
-        this.libelle = libelle;
-        this.dateCreation = dateCreation;
-    }
-
-    // Getters and Setters
-    public Long getIdChaineRestauration() {
-        return idChaineRestauration;
-    }
-
-    public void setIdChaineRestauration(Long idChaineRestauration) {
-        this.idChaineRestauration = idChaineRestauration;
-    }
-
-    public String getLibelle() {
-        return libelle;
-    }
-
-    public void setLibelle(String libelle) {
-        this.libelle = libelle;
-    }
-
-    public LocalDate getDateCreation() {
-        return dateCreation;
-    }
-
-    public void setDateCreation(LocalDate dateCreation) {
-        this.dateCreation = dateCreation;
-    }
 }
